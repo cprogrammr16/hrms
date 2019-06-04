@@ -153,9 +153,9 @@ class Zend_View_Helper_Menubuilder extends Zend_View_Helper_Abstract {
 		$clas_drag = ($con == 'settings')? ' draggable-reports-li ': ''; // Add draggable class for dashbord 
 		
 		/*** commented to remove menu icon 07-08-2015 - START - ***
-		$parent_menu .= "<li id='main_parent_".DASHBOARD_MENU."' super-parent = 'main_parent_".DASHBOARD_MENU."' class = '".$clas_drag."clickable_menu ".$parent_menu_selected_class[DASHBOARD_MENU]."-main ".$tour_menu_class[DASHBOARD_MENU]."' menu-url ='".BASE_URL."welcome' selected-class = '".$parent_menu_selected_class[DASHBOARD_MENU]."' > <a id='".DASHBOARD_MENU."' ><span class='scroll-menu dashboard dashboard-selected-common super_selected'></span><b>Dashboard</b></a></li>";
+		$parent_menu .= "<li id='main_parent_".DASHBOARD_MENU."' super-parent = 'main_parent_".DASHBOARD_MENU."' class = '".$clas_drag."clickable_menu ".$parent_menu_selected_class[DASHBOARD_MENU]."-main ".$tour_menu_class[DASHBOARD_MENU]."' menu-url ='".BASE_URL."welcome' selected-class = '".$parent_menu_selected_class[DASHBOARD_MENU]."' > <a id='".DASHBOARD_MENU."' ><span class='scroll-menu dashboard dashboard-selected-common super_selected'></span><b>Panel de Control</b></a></li>";
 		*** commented to remove menu icon 07-08-2015 - END - ***/
-		$parent_menu .= "<li id='main_parent_".DASHBOARD_MENU."' super-parent = 'main_parent_".DASHBOARD_MENU."' class = '".$clas_drag."clickable_menu ".$parent_menu_selected_class[DASHBOARD_MENU]."-main ".$tour_menu_class[DASHBOARD_MENU]."' menu-url ='".BASE_URL."welcome' selected-class = '".$parent_menu_selected_class[DASHBOARD_MENU]."' > <a id='".DASHBOARD_MENU."' ><b>Dashboard</b></a></li>";
+		$parent_menu .= "<li id='main_parent_".DASHBOARD_MENU."' super-parent = 'main_parent_".DASHBOARD_MENU."' class = '".$clas_drag."clickable_menu ".$parent_menu_selected_class[DASHBOARD_MENU]."-main ".$tour_menu_class[DASHBOARD_MENU]."' menu-url ='".BASE_URL."welcome' selected-class = '".$parent_menu_selected_class[DASHBOARD_MENU]."' > <a id='".DASHBOARD_MENU."' ><b>Panel de Control</b></a></li>";
 		
 		foreach($menuarr as $menuid => $data)
 		{			
@@ -296,9 +296,9 @@ class Zend_View_Helper_Menubuilder extends Zend_View_Helper_Abstract {
 		if(($userRole == SUPERADMIN || $usergroup == MANAGEMENT_GROUP) && $con != 'settings')
 		{		
              /*** removing icon for Logs menu item 17-08-2015 - START ---  ****
-			 $parent_menu .= "<li selected-class='log-selected' id='main_parent_logs'  class='clickable_menu log-selected-main tour_logs' menu-url='' for-childs = 'div_mchilds_logs'><span class='scroll-menu log-module'></span><b>Logs</b></li>";
+			 $parent_menu .= "<li selected-class='log-selected' id='main_parent_logs'  class='clickable_menu log-selected-main tour_logs' menu-url='' for-childs = 'div_mchilds_logs'><span class='scroll-menu log-module'></span><b>Registros</b></li>";
             **** END ****/
-			 $parent_menu .= "<li selected-class='log-selected' id='main_parent_logs'  class='clickable_menu log-selected-main tour_logs' menu-url='' for-childs = 'div_mchilds_logs'><b>Logs</b></li>";
+			 $parent_menu .= "<li selected-class='log-selected' id='main_parent_logs'  class='clickable_menu log-selected-main tour_logs' menu-url='' for-childs = 'div_mchilds_logs'><b>Registros</b></li>";
 
 			/**
 			 * 

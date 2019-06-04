@@ -1376,7 +1376,7 @@ public static function createNew($loginUserId)
 		}
 		   ?>
               <div class="wrapper-demo">
-           <div id="dd" class="wrapper-dropdown-sf" tabindex="1"> <span></span>Create New
+           <div id="dd" class="wrapper-dropdown-sf" tabindex="1"> <span></span>Crear Nuevo
 						<ul class="dropdown">
 			<?php 
               if($loginuserRole == SUPERADMINROLE || $isOrgHead =='1')
@@ -1384,32 +1384,32 @@ public static function createNew($loginUserId)
               ?>
                       
                       <?php if($empaddpermission=='Yes'){?>
-                     <li><a href="<?php echo $baseUrl; ?>/employee/add"><i class="icon-user"></i>Employees</a></li>
+                     <li><a href="<?php echo $baseUrl; ?>/employee/add"><i class="icon-user"></i>Empleados</a></li>
                      <?php } ?>
                      
                      
 					  <?php if($reqiaddpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Recruitments</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Reclutamientos</a></li>
 					  <?php }?>
 					  
 					  
 					 <?php if($apprinitpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/appraisalinit/add"><i class="icon-remove"></i>Appraisals</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/appraisalinit/add"><i class="icon-remove"></i>Tasaciones</a></li>
 					 <?php }?>
 					 
 					  
 					  <?php if($bunitaddpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/businessunits/edit"><i class="icon-cog"></i>Business Units</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/businessunits/edit"><i class="icon-cog"></i>Unidades de Negocio</a></li>
 					   <?php  }?>
                       
 					   
 					   <?php if($deptaddpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/departments/edit"><i class="icon-remove"></i>Departments</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/departments/edit"><i class="icon-remove"></i>Departamentos</a></li>
 					<?php  }?>
 					 
 					  
 					<?php if($announcementaddperm=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/announcements/add"><i class="icon-remove"></i>Announcements</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/announcements/add"><i class="icon-remove"></i>Anuncios</a></li>
                     <?php } ?>
                     
                     
@@ -1417,70 +1417,70 @@ public static function createNew($loginUserId)
              }elseif($loginuserGroup == HR_GROUP||($loginuserGroup == MANAGEMENT_GROUP )){?>
                      
                      <?php if($empaddpermission=='Yes'){?>
-                      <li><a href="<?php echo $baseUrl; ?>/employee/add"><i class="icon-user"></i>Employees</a></li>
+                      <li><a href="<?php echo $baseUrl; ?>/employee/add"><i class="icon-user"></i>Empleados</a></li>
                        <?php } ?>
                        
                       
                        <?php if($leaveAddPerm=='Yes'){?>
-                       <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-cog"></i>Leave Request</a></li>
+                       <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-cog"></i>Petici&oacute;n de Permiso</a></li>
 					 <?php }?>
 					 
 					  
                        <?php if(!empty($servReqAddPerm)){?>
-					 <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Service Request</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Solicitud de Servicio</a></li>
 					<?php }?>
 					
 					 
 					<?php if($reqiaddpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Recruitments</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Reclutamientos</a></li>
 					 <?php }?>
 					
 					
 					 <?php if($apprinitpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/appraisalinit/add"><i class="icon-remove"></i>Appraisals</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/appraisalinit/add"><i class="icon-remove"></i>Tasaciones</a></li>
 					 <?php }?>
 					
 					 
 					 <?php if($bunitaddpermission=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/businessunits/edit"><i class="icon-cog"></i>Business Units</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/businessunits/edit"><i class="icon-cog"></i>Unidades de Negocios</a></li>
 					 <?php  }?>
 					
 					
 					  <?php if($deptaddpermission=='Yes'){?>
-					<li><a href="<?php echo $baseUrl; ?>/departments/edit"><i class="icon-remove"></i>Departments</a></li>
+					<li><a href="<?php echo $baseUrl; ?>/departments/edit"><i class="icon-remove"></i>Departamentos</a></li>
 					<?php  }?>
 					
 					
 					  <?php if($announcementaddperm=='Yes'){?>
-					 <li><a href="<?php echo $baseUrl; ?>/announcements/add"><i class="icon-remove"></i>Announcements</a></li>
+					 <li><a href="<?php echo $baseUrl; ?>/announcements/add"><i class="icon-remove"></i>Anuncios</a></li>
                      <?php  }?>
                      
                      
           <?php }elseif($loginuserGroup == EMPLOYEE_GROUP){?>
                      
                       <?php if($leaveAddPerm=='Yes'){?>
-                     <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-remove"></i>Leave Request</a></li>
-					  <?php }?>
-					  
+                       <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-cog"></i>Petici&oacute;n de Permiso</a></li>
+                     <?php }?>
+                     
                       
-					  <?php if(!empty($servReqAddPerm)){?>
-					 <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Service Request</a></li>
-                      <?php }?>
+                       <?php if(!empty($servReqAddPerm)){?>
+                     <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Solicitud de Servicio</a></li>
+                    <?php }?>
                      
           <?php }elseif($loginuserGroup == MANAGER_GROUP||$loginuserGroup == SYSTEMADMIN_GROUP){?>
                      
                      
                       <?php if($leaveAddPerm=='Yes'){?>
-                     <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-remove"></i>Leave Request</a></li>
-					  <?php }?>
-					  
+                       <li><a href="<?php echo $baseUrl; ?>/leaverequest/"><i class="icon-cog"></i>Petici&oacute;n de Permiso</a></li>
+                     <?php }?>
+                     
                       
-                      <?php if(!empty($servReqAddPerm)){?>
-					 <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Service Request</a></li>
-                        <?php }?>
+                       <?php if(!empty($servReqAddPerm)){?>
+                     <li><a href="<?php echo $baseUrl; ?>/servicerequests/add/t/pA=="><i class="icon-remove"></i>Solicitud de Servicio</a></li>
+                    <?php }?>
                      
                      <?php if($reqiaddpermission=='Yes'){?>
-                      <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Recruitments</a></li>
+                      <li><a href="<?php echo $baseUrl; ?>/requisition/add"><i class="icon-cog"></i>Reclutamientos</a></li>
                      <?php }?>
                      
                      

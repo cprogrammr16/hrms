@@ -545,28 +545,34 @@ $(document).ready(function(){
                 </a>
                 <div class="logoutdiv" id="logoutid" style="display:none">
                 <div class="arrow-div"></div>
-                <a href="<?php echo $baseUrl; ?>/dashboard/viewprofile" class="first">View Profile</a>
-                <a href="<?php echo $baseUrl; ?>/viewsettings/1">Settings</a>                                                        
-                <a href="<?php echo $baseUrl; ?>/dashboard/changepassword">Change Password</a>
+                <a href="<?php echo $baseUrl; ?>/dashboard/viewprofile" class="first">Ver Perfil</a>
+                <a href="<?php echo BASE_URL; ?>viewsettings/1">>Ajustes</a></a>                                                        
+                <a href="<?php echo $baseUrl; ?>/dashboard/changepassword">Cambiar contrase&ntilde;a</a>
 <?php 
 if($loginuserRole == SUPERADMINROLE)
 {
 ?>
-        <a href="<?php echo $baseUrl; ?>/dashboard/emailsettings">Mail Settings</a>
+        <a href="<?php echo BASE_URL; ?>dashboard/emailsettings">>Ajustes</a> de Correo</a>
 <?php 
+}
+if($controllerName != "reports")
+{
+?>
+    <span id="tourLink">Toma el Tour</span>
+<?php
 }
 if($loginuserRole == SUPERADMINROLE)
 {
 ?>
-	<a href="<?php echo $baseUrl; ?>/dashboard/upgradeapplication">Upgrade Application</a>
-<?php }?>	
-    <a href="<?php echo $baseUrl; ?>/index/logout">Logout</a>
+    <a href="<?php echo $baseUrl; ?>/dashboard/upgradeapplication">Actualizar Aplicaci&oacute;n</a>
+<?php }?>   
+    <a href="<?php echo $baseUrl; ?>/index/logout">Cerrar Sesi&oacute;n</a>
         </div>
     </div>
             <?php if($loginuserRole == SUPERADMINROLE)
 				{?>
 					<div class="configurewizard"> 
-						<a href="<?php echo $baseUrl; ?>/wizard" id="configwizard">Configuration Wizard</a>
+						<a href="<?php echo $baseUrl; ?>/wizard" id="configwizard">Asistente de Configuraci&oacute;n</a>
 					</div>
 			<?php } ?>
 								

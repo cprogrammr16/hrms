@@ -106,7 +106,7 @@ class Assets_Model_Assets extends Zend_Db_Table_Abstract
 			'searchArray' => $searchArray,
 			'call'=>$call,
 			'dashboardcall'=>$dashboardcall,
-			'menuName' => 'Assets'
+			'menuName' => 'Bienes'
 			);
 			return $dataTmp;
 	}
