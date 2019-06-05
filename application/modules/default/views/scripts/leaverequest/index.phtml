@@ -469,7 +469,7 @@ function applyFilter() {
 <?php 
     if($this->loginUserId == SUPERADMIN)
 	{?>
-	   <div class="ml-alert-1-info m1-info-set"><div class="style-1-icon info"></div>You will not be able to apply for leaves</div>
+	   <div class="ml-alert-1-info m1-info-set"><div class="style-1-icon info"></div>No podrá solicitar permisos.</div>
 	<?php
 	}
     else if(empty($this->leavetype) || empty($this->getavailbaleleaves) || empty($this->weekendDatailsArr) || ($this->rMngr == 'No') || ($this->hremailgroup == '')) 
@@ -518,8 +518,7 @@ function applyFilter() {
 <?php } ?>
 
 <div class="info_div">
-Click on a date to apply for 1 day of leave. Click and drag on the desired dates to apply for multiple days of leave.
-</div>
+Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre las fechas deseadas para solicitar varios días de licencia.</div>
 
 
 

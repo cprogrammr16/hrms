@@ -241,7 +241,7 @@
 <?php 
     if($this->loginUserId == SUPERADMIN)
 	{?>
-	   <div class="ml-alert-1-info m1-info-set"><div class="style-1-icon info"></div>You will not be able to apply for leaves</div>
+	   <div class="ml-alert-1-info m1-info-set"><div class="style-1-icon info"></div>No podrá solicitar permisos.</div>
 	<?php
 	}
     else if(empty($this->leavetype) || empty($this->getavailbaleleaves) || empty($this->weekendDatailsArr) || ($this->rMngr == 'No') || ($this->hremailgroup == '')) 
