@@ -322,7 +322,7 @@ class Zend_View_Helper_Logsgrid extends Zend_View_Helper_Abstract {
 						// Disable Sorting if Key is in Extra Columns
 						if(@$this->extra[$key]['name'] != '' && !is_array($value)) {
 							if($value == "Action")
-							$output .= "<span class='action-text'>Action</span>";
+							$output .= "<span class='action-text'>Acci&oacute;n</span>";
 							else
 							$output .= $value;
 

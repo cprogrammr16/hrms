@@ -421,7 +421,7 @@ class Zend_View_Helper_Requisitiongrid extends Zend_View_Helper_Abstract {
 					if(@$this->extra[$key]['name'] != '' && !is_array($value)) {
 						
 						if($value == "Action")	
-							$output .= "<span class='action-text'>Action</span>";
+							$output .= "<span class='action-text'>Acci&oacute;n</span>";
 						else
 							$output .= $value;
 					} else {

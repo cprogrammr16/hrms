@@ -1541,11 +1541,11 @@ public static function createNew($loginUserId)
 		$rejectedLeavesCount = $leaverequestmodel->getLeavesCount($userId,3);
 		$cancelLeavesCount = $leaverequestmodel->getLeavesCount($userId,4);
 		return $countArray = array(
-							'all'=>$pendingLeavesCount+$approvedLeavesCount+$rejectedLeavesCount+$cancelLeavesCount,
-							'pendingleaves'=>$pendingLeavesCount,
-							'cancelleaves'=>$cancelLeavesCount,
-							'approvedleaves'=>$approvedLeavesCount,
-							'rejectedleaves'=>$rejectedLeavesCount				
+							'Todos'=>$pendingLeavesCount+$approvedLeavesCount+$rejectedLeavesCount+$cancelLeavesCount,
+							'En Espera'=>$pendingLeavesCount,
+							'canceladas Total'=>$cancelLeavesCount,
+							'aprobadas Total'=>$approvedLeavesCount,
+							'rechazadas Total'=>$rejectedLeavesCount				
 							);
 	}
 	

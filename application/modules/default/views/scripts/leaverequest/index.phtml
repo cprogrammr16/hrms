@@ -103,7 +103,7 @@
 						if($('#errors-from_date').length == 0)
 							$('#from_date').parent().append("<span class='errors' id='errors-from_date'>Leave management options are not configured yet.</span>");
 						if($('#errors-to_date').length == 0)	
-							$('#to_date').parent().append("<span class='errors' id='errors-to_date'>Leave management options are not configured yet.</span>");
+							$('#to_date').parent().append("<span class='errors' id='errors-to_date'>Las opciones de gestión de permisos aún no están configuradas.</span>");
 				   <?php }  if(empty($this->reportingManagerDetails)){?>
 						if($('#errors-rep_mang_id').length == 0)
 							$('#rep_mang_id').parent().append("<span class='errors' id='errors-rep_mang_id'>Reporting manager is not assigned yet. Please contact your HR.</span>");	
@@ -551,7 +551,7 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
         <div class="total-form-controller">
 		      
 		    <div class="new-form-ui">
-			  <label class="required">Available Leaves</label>
+			  <label class="required">Permisos Disponibles</label>
 			<div class="division"><?php echo $this->form->no_of_days; ?></div>
 			<?php if(isset($this->msgarray['no_of_days'])){?>
 			   <span class="errors" id="errors-<?php echo $this->form->no_of_days->getId(); ?>"><?php echo $this->msgarray['no_of_days'];?></span>
@@ -559,7 +559,7 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
 			</div>
 			
 			<div class="new-form-ui">
-			  <label class="required">Leave Type</label>
+			  <label class="required">Tipo de Licencia</label>
 			<div class="division"><?php echo $this->form->leavetypeid; ?></div>
 			<?php if(isset($this->msgarray['leavetypeid'])){?>
 			   <span class="errors" id="errors-<?php echo $this->form->leavetypeid->getId(); ?>"><?php echo $this->msgarray['leavetypeid'];?></span>
@@ -567,7 +567,7 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
 			</div>
 			
 			<div class="new-form-ui textareaheight">
-			  <label class="required">Reason</label>
+			  <label class="required">Raz&oacute;n</label>
 			<div class="division"><?php echo $this->form->reason; ?></div>
 			<?php if(isset($this->msgarray['reason'])){?>
 			   <span class="errors" id="errors-<?php echo $this->form->reason->getId(); ?>"><?php echo $this->msgarray['reason'];?></span>
@@ -575,19 +575,19 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
 			</div>
 			
 			<div class="new-form-ui">
-			  <label class="required">From <img class="tooltip" title="<?php echo DATE_DESCRIPTION;?>" src="<?php echo MEDIA_PATH;?>images/help.png"></label>
+			  <label class="required">Desde <img class="tooltip" title="<?php echo DATE_DESCRIPTION;?>" src="<?php echo MEDIA_PATH;?>images/help.png"></label>
 			<div class="division"><?php echo $this->form->from_date; ?></div>
 			  <span class="errors" id="errors-<?php echo $this->form->from_date->getId(); ?>"><?php echo isset($this->msgarray['from_date'])?$this->msgarray['from_date']:'';?></span>
 			</div>
 			
 			<div class="new-form-ui" id="todatediv">
-			  <label class="required">To <img class="tooltip" title="<?php echo DATE_DESCRIPTION;?>" src="<?php echo $this->baseUrl().'/public/media/';?>images/help.png"></label>
+			  <label class="required">Hasta <img class="tooltip" title="<?php echo DATE_DESCRIPTION;?>" src="<?php echo $this->baseUrl().'/public/media/';?>images/help.png"></label>
 			<div class="division"><?php echo $this->form->to_date; ?></div>
 			   <span class="errors" id="errors-<?php echo $this->form->to_date->getId(); ?>"><?php echo isset($this->msgarray['to_date'])?$this->msgarray['to_date']:'' ;?></span>
 			</div>
 			
 			<div class="new-form-ui">
-			  <label class="required">Leave For</label>
+			  <label class="required">Duraci&oacute;n</label>
 			<div class="division"><?php echo $this->form->leaveday; ?></div>
 			<?php if(isset($this->msgarray['leaveday'])){?>
 			   <span class="errors" id="errors-<?php echo $this->form->leaveday->getId(); ?>"><?php echo $this->msgarray['leaveday'];?></span>
@@ -595,12 +595,12 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
 			</div>
 			
 			<div class="new-form-ui">
-			  <label>Days</label>
+			  <label>D&iacute;as</label>
 			<div class="division"><?php echo $this->form->appliedleavesdaycount; ?></div>
 			</div>
 			
 			<div class="new-form-ui">
-			  <label class="required">Reporting Manager</label>
+			  <label class="required">Gerente Informado</label>
 			<div class="division"><?php echo $this->form->rep_mang_id; ?></div>
 			<?php if(isset($this->msgarray['rep_mang_id'])){?>
 			   <span class="errors" id="errors-<?php echo $this->form->rep_mang_id->getId(); ?>"><?php echo $this->msgarray['rep_mang_id'];?></span>
@@ -612,7 +612,7 @@ Haga clic en una fecha para solicitar 1 día de licencia. Haga clic y arrastre l
 		
 		<div class="new-form-ui-submit">
 		<?php echo $this->form->submit; ?>	
-		<button name="Canceldialog" id="Canceldialog" onclick="closedialog('cancel');" type="button">Cancel</button>
+		<button name="Canceldialog" id="Canceldialog" onclick="closedialog('cancel');" type="button">Cancelar</button>
 		</div>
 </form>
 </div>
