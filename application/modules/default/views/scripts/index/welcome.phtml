@@ -25,9 +25,9 @@ echo $this->htmlcontent;
 if($this->htmlcontent == '')
 {
 	
- echo "<div class='left_dashboard ml-alert-1-info'><div class='style-1-icon info'></div>You have not configured your widgets.
-				<a href='".BASE_URL."viewsettings/1'> Click here  </a>
-				to configure.</div>";
+ echo "<div class='left_dashboard ml-alert-1-info'><div class='style-1-icon info'></div>No has configurado tus widgets.
+				<a href='".BASE_URL."viewsettings/1'> Haga click aqu&iacute; </a>
+				para configurar.</div>";
 }
 ?>
 <div class="right_dashboard">
@@ -85,7 +85,7 @@ echo "</pre>";
 } 
 else
 {
-  	echo '<div id="today_bday_name" class="to_daybirth no_birthday">No birthdays today. </div>';
+  	echo '<div id="today_bday_name" class="to_daybirth no_birthday">Hoy no hay cumplea&ntilde;os. </div>';
 	
 }
 ?>
@@ -93,7 +93,7 @@ else
 	<?php
 	if(!empty($this->upcomingBirthdyas))
 	{
-		echo '<div class="upcoming_birth"><h4 class="dashbord_title">Upcoming Birthdays</h4>';
+		echo '<div class="upcoming_birth"><h4 class="dashbord_title">Cumplea&ntilde;os pr&oacute;ximos</h4>';
 		$upcomingNames = $this->upcomingBirthdyas;
 		//$upcomingNames = $this->upcomingBirthdyas['names'];
 		
@@ -143,7 +143,7 @@ if($this->announcementPrivilege == 'true')
     $annData = $this->announcementsData; $ann_count = count($annData);
 	if($ann_count>0)
 	{ ?>
-	<div class="company_announc " ><h4 class="dashbord_title">Company Announcements</h4>
+	<div class="company_announc " ><h4 class="dashbord_title">Anuncios Institucionales</h4>
 	  <ul><?php 
 		for ($i=0;($i<$ann_count && $i<4);$i++){ 
 		  $attachments = isset($annData[$i]['attachments'])? count((array)json_decode($annData[$i]['attachments'])):0;
