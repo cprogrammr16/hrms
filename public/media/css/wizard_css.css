@@ -5,7 +5,7 @@ body.wizard_bg{ background:#eee url(../imags/wizard_bg.jpg) left bottom repeat; 
 .container{ width:1206px; margin:0 auto;}
 .clear{ clear:both;}
 .top_wrapper { float:left; margin:20px 0 30px 0; width:100%; }
-.logo{ background:url(../imags/logo_wizard.png) left bottom no-repeat; width:217px; height:46px; margin:0 70px 0px 0; cursor:pointer; float:left;}
+.logo{ /*background:url(../imags/logo_wizard.png)*/ left bottom no-repeat; width:217px; height:46px; margin:0 70px 0px 0; cursor:pointer; float:left;}
 .sitedivclass { float:right;}
 .configlater { margin-right:1px; }
 .backtosite { background: #3498db; padding:5px 10px; float: right; }
